@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+  <head>
+    <meta charset="UTF-8" />
+    <title>cagriustun</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/PanoControls.css" />
+    <link rel="stylesheet" href="./style.css" />
+   
+  </head>
+  <body>
+    <div id="loading"></div>
+    <div class="panoviewer-container viewer">
+      <div id="panoSet">
+        <div class="panoviewer container" id="myPanoViewer">
+          <div class="viewer" data-page="1">
+            <div class="container"></div>
+            <div class="hotspot search search1" data-page="1" data-anchor-index="0" data-yaw="10" data-pitch="10" onclick="cu_remove(1)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search2" data-page="1" data-anchor-index="0" data-yaw="30" data-pitch="10" onclick="cu_remove(2)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search3" data-page="1" data-anchor-index="0" data-yaw="50" data-pitch="10" onclick="cu_remove(3)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search4" data-page="1" data-anchor-index="0" data-yaw="70" data-pitch="10" onclick="cu_remove(4)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search5" data-page="1" data-anchor-index="0" data-yaw="90" data-pitch="10" onclick="cu_remove(5)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search6" data-page="1" data-anchor-index="0" data-yaw="-10" data-pitch="10" onclick="cu_remove(6)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search7" data-page="1" data-anchor-index="0" data-yaw="-30" data-pitch="10" onclick="cu_remove(7)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search8" data-page="1" data-anchor-index="0" data-yaw="-50" data-pitch="10" onclick="cu_remove(8)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search9" data-page="1" data-anchor-index="0" data-yaw="-70" data-pitch="10" onclick="cu_remove(9)"><img id="search_img" src="img/pok1.png"></div>
+            <div class="hotspot search search10" data-page="1" data-anchor-index="0" data-yaw="-90" data-pitch="10" onclick="cu_remove(10)"><img id="search_img" src="img/pok1.png"></div>
+          </div>
+          <div class="scoreboard">
+            <span class="scoreboard_txt">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://naver.github.io/egjs-view360/common/js/jquery-2.2.4.js"></script>
+    <script src="https://naver.github.io/egjs-view360/common/js/qrcode.js"></script>
+    <script src="https://naver.github.io/egjs-view360/common/js/screenfull.min.js"></script>
+    <script src="https://naver.github.io/egjs-view360/common/js/PieView.js"></script>
+    <script src="https://naver.github.io/egjs-view360/common/js/GyroTouchOptions.js"></script>
+    <script src="https://naver.github.io/egjs-view360/release/latest/dist/view360.pkgd.js"></script>
+    <script src="https://naver.github.io/egjs-view360/common/js/PanoControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.2/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webxr-polyfill@2.0.1/build/webxr-polyfill.min.js"></script>
+    <script src="https://naver.github.io/egjs-view360/common/js/initXR.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      function hideLoader() {
+        $("#loading").hide();
+      }
+
+      $(window).load(hideLoader);
+      setTimeout(hideLoader, 20 * 1000);
+    </script>
+  </body>
+</html>
