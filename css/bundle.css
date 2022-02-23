@@ -85,7 +85,7 @@
     div#game-sec .found-sec img {
       width: 100%;
       position: relative;
-      top: 0.5vw; }
+      top: -8.1vw; }
       @media (max-width: 1024px) and (max-aspect-ratio: 13 / 10) {
         div#game-sec .found-sec img {
           top: 1vw; } }
@@ -93,7 +93,7 @@
       position: absolute;
       display: table;
       margin: auto;
-      bottom: 1%;
+      bottom: 43%;
       left: 50%;
       transform: translate3d(-46%, 0, 0);
       font-size: 2.2vw;
@@ -994,6 +994,30 @@
         font-family: 'Gotham_Black'; }
       div#share-screen .share-desc br.mob {
         display: none; }
+      
+
+        div#share-screen .share-desc_2 {
+          margin: auto;
+          display: table;
+          text-align: center;
+          margin-top: 4vh;
+          color: #ffffff;
+          font-family: 'Gotham_Medium';
+          font-size: 1.5vw; }
+          @media (max-width: 1024px) and (max-aspect-ratio: 13 / 10) {
+            div#share-screen .share-desc_2 {
+              font-size: 6vw; }
+              div#share-screen .share-desc_2 br.mob {
+                display: block !important; } }
+          @media (min-width: 1700px) {
+            div#share-screen .share-desc_2 {
+              font-size: 25px; } }
+          div#share-screen .share-desc_2 span.thick {
+            font-family: 'Gotham_Black'; }
+          div#share-screen .share-desc_2 br.mob {
+            display: none; }
+
+
     div#share-screen #share-btn {
       margin: auto;
       display: table;

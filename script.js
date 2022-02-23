@@ -117,7 +117,7 @@ function load(target, page) {
 var viewer = new eg.view360.PanoViewer(container, {
     image: "img/car-img.jpg",
         yawRange: [-180, 180],
-        pitchRange: [-90, 90], 
+        pitchRange: [-70, 70], 
         fovRange: [30, 70] 
 }).on("ready", function (e) {
     viewer.lookAt({

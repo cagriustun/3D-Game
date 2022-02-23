@@ -292,43 +292,46 @@
       <div class="panoviewer container" id="myPanoViewer">
         <div class="viewer" data-page="1">
           <div class="container"></div>
-          <div class="hotspot search search1" data-page="1" data-anchor-index="0" data-yaw="10" data-pitch="10"
-            onclick="cu_remove(1)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search2" data-page="1" data-anchor-index="0" data-yaw="30" data-pitch="10"
-            onclick="cu_remove(2)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search3" data-page="1" data-anchor-index="0" data-yaw="50" data-pitch="10"
-            onclick="cu_remove(3)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search4" data-page="1" data-anchor-index="0" data-yaw="70" data-pitch="10"
-            onclick="cu_remove(4)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search5" data-page="1" data-anchor-index="0" data-yaw="90" data-pitch="10"
-            onclick="cu_remove(5)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search6" data-page="1" data-anchor-index="0" data-yaw="-10" data-pitch="10"
-            onclick="cu_remove(6)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search7" data-page="1" data-anchor-index="0" data-yaw="-30" data-pitch="10"
-            onclick="cu_remove(7)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search8" data-page="1" data-anchor-index="0" data-yaw="-50" data-pitch="10"
-            onclick="cu_remove(8)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search9" data-page="1" data-anchor-index="0" data-yaw="-70" data-pitch="10"
-            onclick="cu_remove(9)"><img id="search_img" src="img/pok1.png"></div>
-          <div class="hotspot search search10" data-page="1" data-anchor-index="0" data-yaw="-90" data-pitch="10"
-            onclick="cu_remove(10)"><img id="search_img" src="img/pok1.png"></div>
+          <div class="hotspot search search1" data-page="1" data-anchor-index="0" data-yaw="50" data-pitch="0"
+            onclick="cu_remove(1)"><img id="search_img" src="img/santa/Santa01.png"></div>
+          <div class="hotspot search search2" data-page="1" data-anchor-index="0" data-yaw="-30" data-pitch="20"
+            onclick="cu_remove(2)"><img id="search_img" src="img/santa/Santa02.png"></div>
+          <div class="hotspot search search3" data-page="1" data-anchor-index="0" data-yaw="140" data-pitch="70"
+            onclick="cu_remove(3)"><img id="search_img" src="img/santa/Santa03.png"></div>
+          <div class="hotspot search search4" data-page="1" data-anchor-index="0" data-yaw="-90" data-pitch="-40"
+            onclick="cu_remove(4)"><img id="search_img" src="img/santa/Santa04.png"></div>
+          <div class="hotspot search search5" data-page="1" data-anchor-index="0" data-yaw="0" data-pitch="110"
+            onclick="cu_remove(5)"><img id="search_img" src="img/santa/Santa05.png"></div>
+          <div class="hotspot search search6" data-page="1" data-anchor-index="0" data-yaw="-70" data-pitch="-10"
+            onclick="cu_remove(6)"><img id="search_img" src="img/santa/Santa06.png"></div>
+          <div class="hotspot search search7" data-page="1" data-anchor-index="0" data-yaw="-76" data-pitch="-83"
+            onclick="cu_remove(7)"><img id="search_img" src="img/santa/Santa07.png"></div>
+          <div class="hotspot search search8" data-page="1" data-anchor-index="0" data-yaw="-130" data-pitch="50"
+            onclick="cu_remove(8)"><img id="search_img" src="img/santa/Santa14.png"></div>
+          <div class="hotspot search search9" data-page="1" data-anchor-index="0" data-yaw="-162" data-pitch="-30"
+            onclick="cu_remove(9)"><img id="search_img" src="img/santa/Santa11.png"></div>
+          <div class="hotspot search search10" data-page="1" data-anchor-index="0" data-yaw="-120" data-pitch="10"
+            onclick="cu_remove(10)"><img id="search_img" src="img/santa/Santa15.png"></div>
         </div>
+
         <div class="scoreboard" style="display: none;">
           <span class="scoreboard_txt">0</span>
         </div>
+        <div id="game-sec">
+          <div class="timer-sec"><img src="assets/game/Game-Timer.png" alt="">
+            <div class="timer" id="timer">30</div>
+          </div>
+          <div class="found-sec"><img src="assets/game/Game-Found.png" alt="">
+            <div class="count-cnt" id="foundCnt">0</div>
+          </div>
+          <canvas id="renderCanvas" width="804" height="937" touch-action="none" style="touch-action: none;"></canvas>
+        </div>
       </div>
+      
     </div>
   </div>
-  <div id="game-sec">
-    <div class="timer-sec"><img src="assets/game/Game-Timer.png" alt="">
-      <div class="timer" id="timer">30</div>
-    </div>
-    <div class="found-sec"><img src="assets/game/Game-Found.png" alt="">
-      <div class="count-cnt" id="foundCnt">0</div>
-    </div>
-    <canvas id="renderCanvas" width="804" height="937" touch-action="none" style="touch-action: none;"></canvas>
-  </div>
-  <div id="share-screen" class="hide">
+  
+  <div id="share-screen" class="hide" >
     <div class="confetti-sec">
       <div class="flake1"><img src="assets/title/flake1.png" alt=""></div>
       <div class="flake2"><img src="assets/title/flake1.png" alt=""></div>
@@ -338,6 +341,7 @@
     <!-- <div class="brand-logo"><img src="assets/title/brand-logo.png" alt=""></div> -->
     <div class="share-logo"><img src="assets/title/title-logo.png?v=1" alt=""></div>
     <div class="share-desc"></div>
+    <div class="share-desc_2"></div>
     <div id="share-btn"><img src="assets/share/FbShare.png" alt=""></div>
     <div class="share-footer-sec">
       <div class="footer-santas"><img src="assets/title/Santas.png" alt=""></div>
@@ -346,7 +350,7 @@
       </div></a>
     </div>
   </div>
-  <div id="instruction-screen">
+  <div id="instruction-screen" >
     <div class="instruction-sec">
       <div class="instruction-head">HOW TO PLAY</div>
       <div class="instruction-content">
@@ -358,7 +362,7 @@
 
     </div>
   </div>
-  <div id="title-screen">
+  <div id="title-screen" >
     <div class="confetti-sec">
       <div class="flake1"><img src="assets/title/flake1.png" alt=""></div>
       <div class="flake2"><img src="assets/title/flake1.png" alt=""></div>
@@ -391,7 +395,9 @@
       document.querySelector("#title-screen").style.display = "none";
       document.querySelector(".panoviewer-container").style.display = "none";
       document.querySelector("#game-sec").style.display = "none";
-
+      if(localStorage.getItem("cu_score_1") == null){
+        localStorage.setItem("cu_score_1",0);
+      }
       var timeleft = 4;
       var downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
@@ -426,10 +432,14 @@
       var cu_downloadTimer = setInterval(function () {
         if (cu_timeleft <= 0) {
           clearInterval(cu_downloadTimer);
+          if(localStorage.getItem("cu_score_1") < cu_score_txt){
+            localStorage.setItem("cu_score_1", cu_score_txt);
+          }
           document.querySelector(".panoviewer-container").style.display = "none";
           document.querySelector("#game-sec").style.display = "none";
           document.querySelector("#share-screen").style.display = "block";
           document.querySelector(".share-desc").textContent = "Congrats! Your Score: " + cu_score_txt;
+          document.querySelector(".share-desc_2").textContent = "Your High Score: " + localStorage.getItem("cu_score_1");
         }
         document.querySelector("#timer").textContent = cu_timeleft;
         cu_timeleft -= 1;
