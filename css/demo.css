@@ -10,15 +10,20 @@ header {
 }
 
 header h1 {
-  font-family: 'Zilla Slab', serif;
+  font-family: "Zilla Slab", serif;
   font-weight: bold;
   margin: 45px 0 30px;
   text-align: center;
   font-size: 60px;
   word-break: break-word;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Zilla Slab', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Zilla Slab", serif;
   font-weight: 700;
   letter-spacing: -0.8px;
   color: #333;
@@ -129,12 +134,12 @@ p.info img {
   font-size: 13px;
   text-align: left;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  ;
   word-break: break-all;
   white-space: pre-wrap;
 }
 
-.source span, .source a {
+.source span,
+.source a {
   font-size: 13px;
   margin: 0;
   padding: 0;
@@ -149,7 +154,6 @@ p.info img {
 .source pre .comment {
   color: #6a6;
 }
-
 
 .qrviewer {
   position: fixed;
@@ -172,7 +176,7 @@ p.info img {
   max-width: 100%;
   max-height: 100%;
   min-width: 300px;
-  margin: auto; 
+  margin: auto;
   z-index: 10;
 }
 
@@ -201,27 +205,39 @@ p.info img {
   background-size: 100% 100%;
 }
 
-  header .home {
-    margin: 0;
-    font-size: 26px;
-    background-repeat: no-repeat;
-    width: 198px;
-    height: 27px;
-    position: absolute;
-    text-align: left;
-  }
-  
-  .home img.egjs_logo{
-    width: 34px;
-    display: block;
-    margin-bottom: -8px;
-  }
+header .home {
+  margin: 0;
+  font-size: 26px;
+  background-repeat: no-repeat;
+  width: 198px;
+  height: 27px;
+  position: absolute;
+  text-align: left;
+}
 
-  .home a {
-    font-family: 'Zilla Slab', serif;
-    line-height: 40px;
-    letter-spacing: -0.8px;
-    text-decoration: none;
-    display: inline-block;
-    color: #2B2B2B;
-  }
+.home img.egjs_logo {
+  width: 34px;
+  display: block;
+  margin-bottom: -8px;
+}
+
+.home a {
+  font-family: "Zilla Slab", serif;
+  line-height: 40px;
+  letter-spacing: -0.8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #2b2b2b;
+}
+.form-label {
+  font-size: 20px;
+  font-family: "Zilla Slab", serif;
+}
+.modal-title {
+  font-size: 25px;
+}
+.form-btn {
+  font-family: "Zilla Slab", serif;
+  margin-top: 10px;
+  font-weight: bolder;
+}
