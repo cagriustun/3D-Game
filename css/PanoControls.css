@@ -90,7 +90,7 @@
   width: 32px;
   height: 8px;
   margin: auto;
-  background-image: url(../img/common_loading_mo_white.gif);
+  background-image: url(/load.gif);
   background-repeat: no-repeat;
   background-size: 32px 8px
 }
