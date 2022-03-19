@@ -101,8 +101,8 @@
       font-family: 'Gotham_Ultra'; }
       @media (max-width: 1024px) and (max-aspect-ratio: 13 / 10) {
         div#game-sec .found-sec .count-cnt {
-          font-size: 8vw;
-          bottom: 1.5%; } }
+          font-size: 6vw;
+          bottom: 0.5%; } }
     @media (max-width: 1024px) and (max-aspect-ratio: 13 / 10) {
       div#game-sec .found-sec {
         width: 60%; } }

@@ -400,9 +400,6 @@
       <div class="share-desc_2" style="margin-top: 15px; margin-bottom: 15px;"></div>
       <div class="register_div">
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form_label_2">
-          Name
-        </label>
         <input
           type="email"
           class="form_control_2"
@@ -411,9 +408,6 @@
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form_label_2">
-          Surname
-        </label>
         <input
           type="email"
           class="form_control_2"
@@ -422,9 +416,6 @@
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form_label_2">
-          Email address
-        </label>
         <input
           type="email"
           class="form_control_2"
@@ -433,9 +424,6 @@
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form_label_2">
-          Phone Number
-        </label>
         <input
           type="email"
           class="form_control_2"
@@ -639,7 +627,15 @@
       setTimeout(hideLoader, 20 * 1000)
 
       $('#share-btn').click(function () {
-        $('#myModal').modal('show')
+        r_n = document.querySelector('#register_name').value;
+        r_s = document.querySelector('#register_surname').value;
+        r_m = document.querySelector('#register_mail').value;
+        r_p = document.querySelector('#register_phone').value;
+        if(r_n == "" || r_s == "" || r_m == "" || r_p == ""){
+          alert("Please fill in the blanks!");
+        } else{
+          $('#myModal').modal('show');
+        }
       })
       
     </script>
